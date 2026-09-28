@@ -82,6 +82,10 @@ int main(void)
 
       printf("%lu bytes retrieved\n", (unsigned long)chunk.size);
       printf("El índice de GINI de Argentina en 2014 fue de: %f\n", dato);
+
+      FILE *archivo = fopen("dato.txt", "w");
+      fprintf(archivo, "%f\n", dato);
+      fclose(archivo);
     }
  
     /* cleanup curl stuff */
