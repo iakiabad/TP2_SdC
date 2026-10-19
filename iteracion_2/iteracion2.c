@@ -14,7 +14,7 @@ int main(void){
     int indice_gini_entero = (int)indice_gini;
 
     int resultado_final = _sumar_uno(indice_gini_entero);
-    printf("\n El resultado final de la iteracion 2 es: %d", resultado_final);
+    printf("\n El resultado final de la iteracion 2 es: %d\n", resultado_final);
 }
 
 
