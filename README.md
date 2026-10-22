@@ -20,7 +20,7 @@ Finalmente, el programa imprimió el resultado obtenido.
 
 ## Depuración
 
-Durante el desarrollo se utilizó **GDB** para depurar el programa y analizar la ejecución de las instrucciones en ensamblador. Se emplearon herramientas de inspección de registros y ejecución paso a paso para observar el comportamiento de la rutina y verificar el funcionamiento de la pila.
+Durante el desarrollo se utilizó **GDB** para depurar el programa y analizar la ejecución de las instrucciones en ensamblador. Se emplearon herramientas de inspección de registros antes, durante y después de la ejecución del a subrutina escrita en ensamblador.
 
 ## Tecnologías utilizadas
 
