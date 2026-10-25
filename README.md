@@ -14,13 +14,23 @@ A partir de este ejemplo, se adaptó el programa para consultar el índice de Gi
 
 En esta iteración se leyó el valor almacenado en `../iteracion_1/dato.txt` mediante `fscanf`. El dato se guardó en una variable de tipo `float` y luego se convirtió a `int`, descartando su parte decimal.
 
-A continuación, se llamó desde C a la subrutina `_sumar_uno`, implementada en ensamblador x86-64. La rutina utilizó la pila para guardar el valor recibido, incrementarlo en uno y devolver el resultado en `RAX`, que se utilizó como valor de retorno de la función.
+A continuación, se llamó desde C a la subrutina `_sumar_uno`, implementada en ensamblador x86-64. La rutina utilizó la pila para guardar el valor recibido, incrementarlo en uno y devolver el resultado en `rax`, que se utilizó como valor de retorno de la función.
 
 Finalmente, el programa imprimió el resultado obtenido.
 
 ## Depuración
 
 Durante el desarrollo se utilizó **GDB** para depurar el programa y analizar la ejecución de las instrucciones en ensamblador. Se emplearon herramientas de inspección de registros antes, durante y después de la ejecución del a subrutina escrita en ensamblador.
+
+
+A continuación se presentan algunas capturas de la depuración y un análisis del proceso:
+
+![antes de entrar a _sumar_uno](iteracion_2/capturas_gdb/Antes3.png)
+`rip+4` es la dirección de retorno que se guardará en el stack
+![despues de entrar a _sumar_uno](iteracion_2/capturas_gdb/Durante5.png)
+Se observa que el dato fue guardado en el tope de la pila
+![despues de salir de _sumar_uno](iteracion_2/capturas_gdb/Despues1.png)
+Al regresar, `rip` apunta a la dirección de retorno de la función.
 
 ## Tecnologías utilizadas
 
