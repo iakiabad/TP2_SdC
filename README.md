@@ -1,5 +1,10 @@
 # TP2_SdC
 
+## Integrantes del grupo
+
+    - Abad Iñaki Manuel
+    - Mensi Spachessi Valentín
+
 ## Descripción
 
 El trabajo se dividió en dos iteraciones. En la primera se obtuvo el índice de Gini de Argentina mediante la API del Banco Mundial, utilizando un ejemplo de libcurl para realizar una petición HTTP. En la segunda se recuperó el dato almacenado y se procesó mediante una subrutina escrita en ensamblador x86-64, llamada desde C.
